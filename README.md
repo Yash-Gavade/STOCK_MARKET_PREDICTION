@@ -1,6 +1,6 @@
 # STOCK PREDICTION 
 
- ## Intro
+ ## Introduction
 To begin my journey into algorithmic trading I have made multiple models in varying complexity ranging from naive predictions to a fully convolutional neural network. The purpose of building all these models is to create a framework to build future models off of and eventually a whole training system. In addition, this was an experiment designed to see if complex models such as deep neural networks outperform simple models.
 </br>
 </br>
@@ -25,17 +25,18 @@ This project was a univariate time series focused on predicting the close price 
 Naive models are naive due to the fact they dont actually "predict". The naive model uses the price from day before as it's prediction as tomorrows price. Since there is not a large change from day to day (usually) in the stock market, this model performs really well.
 
 
-<span style="display:block;text-align:center">![Naive Model](/Images/naive_forecast_plot.png)</span>
+<span style="display:block;text-align:center">![Naive Model](/Images/naive_forecast_plot.png)</span></br>
 This shows a full view of the entire training period. However, since the predicted and the actual prices are so close it is really hard to see the differences here.
 
-<span style="display:block;text-align:center">![Naive Model Zoom](/Images/naive_forecast_plot_zoom.png) </span>
+<span style="display:block;text-align:center">![Naive Model Zoom](/Images/naive_forecast_plot_zoom.png) </span></br>
 This is a zoomed in view of the same model focusing on only the last 10 data points. Here you can easily see the Forecast values mimic the Actual values with a 1 day lag.
 
 #### 2. ***Moving Average Models***
 Simple Moving Averages (SMA) are a way of smoothing out the noise in the data to get a better idea of which way the signal is trending. These are not good predictive models, but I wanted to showcase these models as they are often used in conjunction with other models to generate trading signals. The Naive Forecast is actually the same thing as a 1 day moving average.
 
 There are a variety of moving average types most commonly simple moving averages or exponential. Simple moving averages take the average of the price over a certain span of time while exponential applies a weight factor to the average that decreases over time.
-<span style="display:block;text-align:center">
+<span style="display:block;text-align:center"></br>
+
 **EMA=Price(t)×k+EMA(y)×(1−k)</br>
 *where:*
 t=today</br>
