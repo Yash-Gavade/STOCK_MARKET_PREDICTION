@@ -1,4 +1,4 @@
-# ARIMA model for Stock Prediction
+# Stock Prediction
 
  ## Intro
 To begin my journey into algorithmic trading I have made multiple models in varying complexity ranging from naive predictions to a fully convolutional neural network. The purpose of building all these models is to create a framework to build future models off of and eventually a whole training system. In addition, this was an experiment designed to see if complex models such as deep neural networks outperform simple models.
